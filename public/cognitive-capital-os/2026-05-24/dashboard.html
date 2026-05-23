@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cognitive Capital OS · 2026-05-24</title>
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --panel: #151922;
+      --panel-2: #1c2230;
+      --line: #2b3446;
+      --text: #eef2ff;
+      --muted: #a6b0c3;
+      --amber: #f59e0b;
+      --green: #22c55e;
+      --red: #ef4444;
+      --blue: #60a5fa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top left, rgba(96,165,250,.15), transparent 25%), var(--bg);
+      color: var(--text);
+      font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+    }
+    .wrap { max-width: 1320px; margin: 0 auto; padding: 28px 20px 56px; }
+    .hero, .section, .card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(21,25,34,.92);
+      box-shadow: 0 18px 48px rgba(0,0,0,.22);
+    }
+    .hero { padding: 28px; }
+    h1 { margin: 8px 0 10px; font-size: 36px; line-height: 1.1; }
+    h2 { margin: 0 0 12px; font-size: 18px; }
+    .sub, .note, .muted { color: var(--muted); }
+    .verdict { font-size: 22px; font-weight: 800; margin-top: 12px; }
+    .amber { color: var(--amber); }
+    .grid { display: grid; gap: 16px; }
+    .g3 { grid-template-columns: repeat(3, 1fr); }
+    .g2 { grid-template-columns: 1.2fr .8fr; }
+    .section { margin-top: 16px; padding: 20px; }
+    .card { padding: 16px; background: var(--panel-2); }
+    .kpi-title { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+    .kpi-value { font-size: 24px; font-weight: 800; margin-top: 6px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .pill.gray { background: rgba(148,163,184,.08); }
+    .pill.red { background: rgba(239,68,68,.14); color: #fca5a5; }
+    .pill.green { background: rgba(34,197,94,.14); color: #86efac; }
+    .pill.amber { background: rgba(245,158,11,.14); color: #fcd34d; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    th { color: var(--muted); font-weight: 700; }
+    .bars { display: grid; gap: 10px; }
+    .bar-row { display: grid; grid-template-columns: 150px 1fr 56px; gap: 10px; align-items: center; }
+    .track { height: 10px; border-radius: 999px; overflow: hidden; background: #252c3a; }
+    .fill { height: 100%; background: linear-gradient(90deg, var(--blue), #93c5fd); }
+    .fill.amber { background: linear-gradient(90deg, var(--amber), #fcd34d); }
+    .fill.green { background: linear-gradient(90deg, var(--green), #86efac); }
+    .chain { display: flex; gap: 8px; flex-wrap: wrap; }
+    .node {
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-weight: 700;
+    }
+    .sources a { color: #93c5fd; text-decoration: none; }
+    .sources li { margin: 8px 0; }
+    @media (max-width: 900px) {
+      .g3, .g2 { grid-template-columns: 1fr; }
+      h1 { font-size: 30px; }
+      .bar-row { grid-template-columns: 120px 1fr 48px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="sub">Cognitive Capital OS v3.1 · AI 投行级市场认知 · Latest synced trading day: 2026-05-24</div>
+      <h1>AI 物理世界主线反弹，但热力图原始证据缺失</h1>
+      <div class="verdict">
+        2026 年 5 月 22 日 A 股从 5 月 21 日的大幅回撤中反弹，
+        <span class="amber">机器人概念仍活跃，但盘面领涨已扩散到 PCB、MLCC、超级电容等非纯主线方向</span>，
+        且东方财富热力图 6 视角原始截图/接口证据未取得，因此执行口径维持：
+        <span class="amber">观察，不执行</span>。
+      </div>
+      <p class="note">核心原则：没有 Heatmap Evidence DB 原始证据，就不把“反弹”升级成“确认加仓”。</p>
+    </section>
+
+    <section class="section grid g3">
+      <div class="card">
+        <div class="kpi-title">周期判断</div>
+        <div class="kpi-value">分歧反弹</div>
+        <span class="pill amber">未确认扩散</span>
+      </div>
+      <div class="card">
+        <div class="kpi-title">执行许可</div>
+        <div class="kpi-value">只观察</div>
+        <span class="pill red">禁止追高</span>
+      </div>
+      <div class="card">
+        <div class="kpi-title">漂移风险</div>
+        <div class="kpi-value">中等</div>
+        <span class="pill gray">PCB/MLCC 抬升干扰主线识别</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>投资哲学三问</h2>
+      <div class="grid g3">
+        <div class="card"><strong>世界正在发生什么结构性变化？</strong><br>AI 正从模型与应用，继续向算力、半导体、电力、自动化、机器人、智能制造等物理执行层延伸。</div>
+        <div class="card"><strong>哪些环节不可替代？</strong><br>半导体设备、算力基础设施、电网与电力设备、伺服与运动控制、丝杠/执行器、机器视觉、工业软件。</div>
+        <div class="card"><strong>资本如何重新定价？</strong><br>市场从“会讲故事的 AI”向“能进工厂、能落制造、能吃资本开支”的硬件与工业执行层资产重新定价。</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>AI 物理世界产业链图谱</h2>
+      <div class="chain">
+        <div class="node">AI</div>
+        <div class="node">算力</div>
+        <div class="node">半导体</div>
+        <div class="node">电力</div>
+        <div class="node">自动化</div>
+        <div class="node">机器人</div>
+        <div class="node">智能制造</div>
+      </div>
+    </section>
+
+    <section class="section grid g2">
+      <div>
+        <h2>主线概率雷达</h2>
+        <div class="bars">
+          <div class="bar-row"><span>机器人/自动化</span><div class="track"><div class="fill amber" style="width:68%"></div></div><strong>68%</strong></div>
+          <div class="bar-row"><span>半导体设备</span><div class="track"><div class="fill" style="width:61%"></div></div><strong>61%</strong></div>
+          <div class="bar-row"><span>AI 硬件</span><div class="track"><div class="fill" style="width:57%"></div></div><strong>57%</strong></div>
+          <div class="bar-row"><span>电力基础设施</span><div class="track"><div class="fill green" style="width:54%"></div></div><strong>54%</strong></div>
+          <div class="bar-row"><span>券商放大器</span><div class="track"><div class="fill" style="width:41%"></div></div><strong>41%</strong></div>
+        </div>
+      </div>
+      <div>
+        <h2>贝叶斯修正</h2>
+        <table>
+          <tr><th>方向</th><th>昨日</th><th>今日</th><th>修正原因</th></tr>
+          <tr><td>机器人/自动化</td><td>73%</td><td>68%</td><td>反弹存在，但热力图证据与板块扩散率缺失，不能把反抽等同主升。</td></tr>
+          <tr><td>半导体设备</td><td>65%</td><td>61%</td><td>5 月 21 日承压后，5 月 22 日市场主攻并非纯设备链。</td></tr>
+          <tr><td>AI 硬件</td><td>66%</td><td>57%</td><td>反弹日热点快速轮动，缺少中军与资金集中度证据。</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Heatmap Evidence Panel</h2>
+      <table>
+        <tr>
+          <th>视角</th>
+          <th>目标</th>
+          <th>今日状态</th>
+          <th>结论</th>
+        </tr>
+        <tr>
+          <td>当日涨跌幅 × 成交额</td>
+          <td>识别资金主线</td>
+          <td>原始热力图未采到</td>
+          <td>观察</td>
+        </tr>
+        <tr>
+          <td>主力净占比 × 成交额</td>
+          <td>识别真实资金流</td>
+          <td>原始热力图未采到</td>
+          <td>观察</td>
+        </tr>
+        <tr>
+          <td>3 日涨跌幅 × 成交额</td>
+          <td>识别短线持续性</td>
+          <td>缺原始视图</td>
+          <td>等待</td>
+        </tr>
+        <tr>
+          <td>10 日涨跌幅 × 成交额</td>
+          <td>识别主线趋势</td>
+          <td>缺原始视图</td>
+          <td>等待</td>
+        </tr>
+        <tr>
+          <td>20 日涨跌幅 × 流通市值</td>
+          <td>识别中期配置</td>
+          <td>缺原始视图</td>
+          <td>等待</td>
+        </tr>
+        <tr>
+          <td>量比 × 成交额</td>
+          <td>识别异动与加速</td>
+          <td>缺原始视图</td>
+          <td>禁止追高</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>Anchor Index / Evidence / Drift</h2>
+      <table>
+        <tr><th>模块</th><th>观察</th><th>今日判断</th></tr>
+        <tr><td>Anchor Index Engine</td><td>机器人ETF、半导体ETF、电网设备指数、自动化指数、算力指数、创业板、科创50</td><td>5 月 22 日大盘修复，但缺 ETF 与热力图联动证据，仍按“反弹未确认”处理。</td></tr>
+        <tr><td>Evidence Layer</td><td>涨停数、扩散率、中军成交额、开板回封率</td><td>公开收评显示机器人概念反复活跃，但 PCB/MLCC/超级电容同步强势，主线纯度不足。</td></tr>
+        <tr><td>Drift Detection Engine</td><td>是否被非主线强势板块带偏</td><td>是。今天的赚钱效应并不只在 AI 物理世界，存在把反弹广谱化误判为主线确认的风险。</td></tr>
+      </table>
+    </section>
+
+    <section class="section grid g2">
+      <div>
+        <h2>模拟盘与风险宪法</h2>
+        <table>
+          <tr><th>项目</th><th>口径</th></tr>
+          <tr><td>初始资金</td><td>100,000</td></tr>
+          <tr><td>主线趋势仓</td><td>60%，今日不新增</td></tr>
+          <tr><td>稳健仓</td><td>10%，观察</td></tr>
+          <tr><td>机动仓</td><td>30%，等待热力图和中军共振</td></tr>
+          <tr><td>风险宪法</td><td>禁止高潮追板；禁止单票&gt;20%；禁止无证据交易；主线退潮不硬扛</td></tr>
+        </table>
+      </div>
+      <div>
+        <h2>次日先验</h2>
+        <ul>
+          <li>优先看机器人/自动化中军是否有量能承接，而不是只看涨停个股。</li>
+          <li>若机器人与半导体设备未能在成交额和主力净占比上进入热力图强势区，则继续等待。</li>
+          <li>若市场再度转向消费/防御/纯情绪题材，漂移风险升级。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>最后一公里执行卡</h2>
+      <table>
+        <tr>
+          <th>动作</th>
+          <th>标的/板块</th>
+          <th>仓位</th>
+          <th>触发条件</th>
+          <th>反证条件</th>
+          <th>止损/降级条件</th>
+          <th>复盘时间</th>
+          <th>是否写入错误库</th>
+        </tr>
+        <tr>
+          <td>观察</td>
+          <td>机器人 / 工业自动化</td>
+          <td>0-10% 机动仓候选</td>
+          <td>热力图显示主线扩散率回升，中军进入强势区，主力净占比转正</td>
+          <td>强势仅停留在小票，ETF 与中军不跟</td>
+          <td>若次日再度缩量轮动且热点漂移，继续降级为等待</td>
+          <td>次日 10:00 / 14:30</td>
+          <td>否</td>
+        </tr>
+        <tr>
+          <td>等待</td>
+          <td>半导体设备 / AI 硬件</td>
+          <td>不新增</td>
+          <td>半导体设备重新进入强势区，且非单日脉冲</td>
+          <td>继续被 PCB/MLCC 等替代成资金主攻</td>
+          <td>若核心中军破位，降级至放弃</td>
+          <td>次日收盘</td>
+          <td>否</td>
+        </tr>
+        <tr>
+          <td>放弃</td>
+          <td>纯情绪热点</td>
+          <td>0</td>
+          <td>无</td>
+          <td>无产业逻辑、无热力图证据、无中军</td>
+          <td>永久过滤</td>
+          <td>周度清理</td>
+          <td>是</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="section sources">
+      <h2>已用来源</h2>
+      <ul>
+        <li><a href="https://news.sina.com.cn/zx/2026-05-24/doc-inhytyys6219025.shtml">新浪新闻 / 财联社：2026-05-24 A 股收评</a></li>
+        <li><a href="https://finance.sina.com.cn/stock/bxjj/2026-05-21/doc-inhyrvzm6388122.shtml">新浪财经：2026-05-21 A 股收评</a></li>
+        <li><a href="https://finance.sina.com.cn/wm/2026-05-24/doc-inhyumqn6119878.shtml">新浪财经：2026-05-18 至 2026-05-24 沪市运行情况例行发布</a></li>
+      </ul>
+      <p class="muted">注：Heatmap Evidence DB 的 6 视角原始数据未能在本次自动运行中稳定采集，因此本页有意维持保守执行口径。</p>
+    </section>
+  </div>
+</body>
+</html>
